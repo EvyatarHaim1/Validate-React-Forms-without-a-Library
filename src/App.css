@@ -3,4 +3,66 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url("https://cdn.theculturetrip.com/wp-content/uploads/2018/01/dscn0664ed.jpg");
+  background-size: cover;
+}
+
+form {
+  background-color: white;
+  padding: 0px 60px 20px 60px;
+  border-radius: 20px;
+}
+
+h1 {
+  color: rgb(148, 23, 148);
+  text-align: center;
+}
+
+button {
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  border-radius: 30px;
+  background-color: rebeccapurple;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.formInput {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+}
+
+input {
+  padding: 15px;
+  margin: 10px 0px 0px;
+  border-radius: 5px;
+  border: 1px solid grey;
+}
+
+label {
+  color: grey;
+  font-size: 12px;
+}
+
+span {
+  font-size: 12px;
+  padding: 3px;
+  color: red;
+  display: none;
+}
+
+input:invalid[focused="true"] {
+  border: 1px solid red;
+}
+
+input:invalid[focused="true"] ~ span {
+  display: block;
 }
